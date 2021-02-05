@@ -1,3 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Oswald', sans-serif;
+}
+.grid{
+  &__col{
+    &_6 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &_4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &_3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0 20px;
+    }
+  }
+  .container{
+    width: 1050px;
+  }
+}
 @import '_header.scss';
 
 
