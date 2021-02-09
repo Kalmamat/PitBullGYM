@@ -6,6 +6,14 @@
 body{
   font-family: 'Oswald', sans-serif;
 }
+.container{
+  max-width: 1040px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  color: inherit
+}
 .grid{
   &__col{
     &_6 {
@@ -14,7 +22,8 @@ body{
     }
     &_4 {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 100px;
     }
     &_3 {
       display: grid;
@@ -22,13 +31,10 @@ body{
       grid-gap: 0 20px;
     }
   }
-  .container{
-    width: 1050px;
-  }
+
 }
 @import '_header.scss';
-
-
-
+@import './section';
 @import '_footer.scss';
 @import '_media.scss';
+@import "./about";
