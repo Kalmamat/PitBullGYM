@@ -1,0 +1,34 @@
+.about{
+  height: 100vh;
+  background: #4D1E1E;
+  position: relative;
+  &__title{
+    text-align: center;
+    padding: 110px 0 40px;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+  }
+  &__desc{
+    font-size: 15px;
+    color: white;
+    line-height: 30px;
+  }
+  &__container{
+    display: flex;
+  }
+}
+.about__images{
+  position: absolute;
+  top: 33px;
+  left: 35px;
+  transform: rotate(1turn);
+  transition: 0.5s;
+}
+.about__icon{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(1turn);
+  transition: 0.5s;
+}
