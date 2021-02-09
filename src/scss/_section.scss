@@ -1,9 +1,15 @@
 .hero {
   height: 100vh;
-  background: rgba(54, 6, 6, 0.5);
+  background: rgba(54, 6, 6, 0.2);
   background-blend-mode: darken;
   box-shadow: inset 0px -16px 15px 2px #1b191c;
 }
+  .video__title{
+    color: #FFFFFF;
+    margin-top: 70px;
+    font-size: 100px;
+  }
+
 .fullwidth-bg{
   position: relative;
   height: 100%;
@@ -268,12 +274,12 @@
   }
   &__item.list {
     h4 {
-      font-size: 30px;
+      font-size: 25px;
       text-transform: uppercase;
       margin-bottom: 8px;
     }
     p{
-      font-size: 20px;
+      font-size: 15px;
     }
     span{
       color: red;

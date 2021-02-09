@@ -1,5 +1,5 @@
 .header{
-  background-color: rgba(255, 255, 255, 0.06);
+
   position: absolute;
 
   width: 100%;
@@ -12,16 +12,40 @@
     justify-content: center;
   }
 }
-
+.navbar{
+  margin: 25px 0;
+}
 .navbar__link{
+  position: relative;
   color: white;
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 18px;
   line-height: 19px;
+  text-transform: uppercase;
 
 }
 .navbar__link:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .navbar__link:before{
-
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color:white;
+  bottom: 0;
+  border-radius: 20px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.navbar__link:not(:last-child):after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width:2px;
+  background-color:#b9a0a0;
+  right: -23px;
+}
+.navbar__link:hover:before{
+ transform: scale(1);
 }
