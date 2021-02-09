@@ -2,7 +2,9 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items: 3,
         loop: true,
-            autoplay: false,
+
+        autoplay: true,
+
         autoplayTimeout: 800,
     });
 });
@@ -284,3 +286,13 @@ function initMap() {
             ]
     });
 }
+document.querySelector('.navbar-btn').addEventListener('click' ,() => {
+ document.querySelector('.navbar-btn').classList.toggle('active')
+    document.querySelector('.navbar').classList.toggle('active')
+})
+document.querySelectorAll('.navbar__link').forEach((oneLink) =>{
+    oneLink.addEventListener('click',() => {
+        document.querySelector('.navbar-btn').classList.toggle('active')
+        document.querySelector('.navbar').classList.toggle('active')
+    })
+})
