@@ -1,0 +1,139 @@
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 992px) {
+  .grid__col-4{
+    grid-column-gap: 10px;
+  }
+}
+@media (max-width: 768px){
+  .container {
+    width: 100%;
+  }
+  .video__title {
+    font-size: 65px;
+  }
+  .welcome__container {
+    display: block;
+  }
+  .welcome__content {
+    width: unset;
+  }
+  .shop__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .shop__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shop{
+    background: url("../images/shopfon.jpg") no-repeat center/cover;
+  }
+  .shop__desc {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .grid__col-3{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 120px;
+  }
+  .catalog__item {
+    display: grid;
+  }
+  .coaches{
+    background: url("../images/shopfon.jpg") no-repeat/contain;
+  }
+  .coaches__item {
+    display: block;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .coaches__img {
+    height: 450px;
+  }
+  .coaches__img img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .price{
+    background: url("../images/shopfon.jpg") no-repeat center/cover;
+  }
+  .price__item {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer{
+    background: url("../images/shopfon.jpg") no-repeat center/cover;
+  }
+  .footer__item{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .video__title {
+    font-size: 45px;
+  }
+.hero{
+  background: url("../images/Welcome.png") no-repeat center/cover;
+}
+
+  .welcome {
+    padding: 81px 0;
+  }
+  .welcome__title {
+    font-size: 45px;
+  }
+
+  .welcome__subtitle {
+    font-size: 15px;
+  }
+  .welcome__desc {
+    font-size: 12px;
+  }
+  .shine-button {
+    background: #d33033;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .shop__items-title {
+    font-size: 20px;
+  }
+  .coaches__title {
+    font-size: 30px;
+  }
+  .price__title {
+    font-size: 32px;
+    line-height: unset;
+  }
+  .price__subtitle {
+    font-size: 16px;
+    line-height: unset;
+  }
+  .price__item{
+    padding-bottom: 20px;
+  }
+.price__btn{
+ margin: 0 90px;
+  border-radius: 10px;
+}
+}

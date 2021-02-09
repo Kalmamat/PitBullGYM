@@ -111,6 +111,8 @@
 .shop {
   background: url("../images/gymman2.png") no-repeat center/cover;
   padding: 121px 0 91px;
+  background-position-y: 2px;
+  margin-top: -2px;
   &__discount {
     font-size: 30px;
     color: white;
@@ -164,6 +166,12 @@
     width: 100%;
     height: 500px;
   }
+  &__images {
+    max-height: 300px;
+    img {
+      height: 100%;
+    }
+  }
 }
 
 .coaches {
@@ -184,7 +192,7 @@
     &:before{
       content: '';
       position: absolute;
-      width: 90px;
+      width: 100%;
       height: 3px;
       background-color: #ff0d0d;
       bottom: 5px;

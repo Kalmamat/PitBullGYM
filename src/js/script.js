@@ -2,8 +2,22 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items: 3,
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 800,
+        autoplay: false,
+        autoplayTimeout: 1400,
+        responsive : {
+            320: {
+                items: 1
+            },
+            480 : {
+                items: 1,
+            },
+            768 : {
+                items: 2
+            },
+            992 : {
+
+            }
+        }
     });
 });
 var map;
