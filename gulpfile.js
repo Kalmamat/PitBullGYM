@@ -45,7 +45,7 @@ function css() {
 }
 
 function images() {
-  return src('./src/images/*.{jpg, png, svg, gif, webp, ico}')
+  return src('./src/images/*')
     .pipe(dest('./dist/images/'))
     .pipe(browsersync.stream())
 }
