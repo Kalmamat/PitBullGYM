@@ -75,6 +75,9 @@
   border: none;
   cursor: pointer;
 }
+.btn:hover{
+
+}
 
 .grid__col-4 {
   display: grid;
@@ -153,10 +156,11 @@
 }
   &__item p {
     color: white;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 25px;
     text-align: center;
     margin-bottom: 15px;
+    padding: 0 15px;
   }
 
   &__item h3 {
@@ -172,9 +176,10 @@
   .column{
     background: rgba(100, 7, 7, 0.5);
     border-radius: 20px;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+
   }
 .column:hover{
   -webkit-transform: scale(1.1);
@@ -229,6 +234,9 @@
 }
 .content{
   background: rgba(100, 7, 7, 0.5);
+}
+.content:hover{
+  background: rgba(100, 7, 7, 0.8);
 }
 .price__btn{
   color: red;
@@ -340,8 +348,9 @@
     line-height: 40px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 75px;
+    padding: 75px 0 40px;
     text-transform: uppercase;
+
   }
     &__item {
       margin-bottom: 20px;
