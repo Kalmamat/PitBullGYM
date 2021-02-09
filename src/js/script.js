@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items: 3,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 1400,
         responsive : {
             320: {
