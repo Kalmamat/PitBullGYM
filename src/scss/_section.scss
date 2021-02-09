@@ -28,7 +28,7 @@
 }
 
 .welcome {
-  background: url("../images/Welcome.png") no-repeat center/cover;
+  background: url("../images/welcomefon.jpg") no-repeat center/cover;
   padding: 81px 65px;
   box-shadow: inset 0 0 20px 10px #1b191c;
 
@@ -171,12 +171,25 @@
   padding: 80px 0;
 
   &__title {
+
     font-size: 50px;
     font-weight: bold;
     color: white;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 66px;
+  }
+  .coaches__title_before{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 90px;
+      height: 3px;
+      background-color: #ff0d0d;
+      bottom: 5px;
+      border-radius: 10px;
+    }
   }
 &__item img{
   width: 100%;
@@ -277,71 +290,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 15px;
 }
-.footer {
-  background: url("../images/footer.png") no-repeat top/cover;
-  padding: 43px 0 48px;
-  color: white;
-  &__link a{
-    font-size: 15px;
-    color: #AFA8A8;
-  }&__socials a{
-  font-size: 20px;
-     }
-  &__socials a:hover{
-    color: red;
-  }
-  &__socials a:not(:last-child){
-    margin-right: 20px;
-  }
-  &__item.list {
-    h4 {
-      font-size: 25px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    p{
-      font-size: 15px;
-    }
-    span{
-      color: red;
-    }
 
-  }
-}
-.about{
-  height: 100vh;
-  background: #4D1E1E;
-  position: relative;
-  &__title{
-    text-align: center;
-    padding: 110px 0 40px;
-    font-size: 30px;
-    color: white;
-    text-transform: uppercase;
-  }
-  &__desc{
-    font-size: 15px;
-    color: white;
-    line-height: 30px;
-  }
-  &__container{
-    display: flex;
-  }
-}
-.about__images{
-  position: absolute;
-  top: 33px;
-  left: 35px;
-  transform: rotate(1turn);
-  transition: 0.5s;
-}
-.about__icon{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: rotate(1turn);
-  transition: 0.5s;
-}
 
 .row{
   display: flex;
