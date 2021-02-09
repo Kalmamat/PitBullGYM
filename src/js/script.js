@@ -2,6 +2,7 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items: 3,
         loop: true,
+<<<<<<< HEAD
         autoplay: false,
         autoplayTimeout: 1400,
         responsive : {
@@ -18,6 +19,12 @@ $(document).ready(function(){
 
             }
         }
+=======
+
+        autoplay: true,
+
+        autoplayTimeout: 800,
+>>>>>>> 5e16c24ab60bb3b33cc79d1b070603796ac6440d
     });
 });
 var map;
@@ -298,3 +305,13 @@ function initMap() {
             ]
     });
 }
+document.querySelector('.navbar-btn').addEventListener('click' ,() => {
+ document.querySelector('.navbar-btn').classList.toggle('active')
+    document.querySelector('.navbar').classList.toggle('active')
+})
+document.querySelectorAll('.navbar__link').forEach((oneLink) =>{
+    oneLink.addEventListener('click',() => {
+        document.querySelector('.navbar-btn').classList.toggle('active')
+        document.querySelector('.navbar').classList.toggle('active')
+    })
+})
