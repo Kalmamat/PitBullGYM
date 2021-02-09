@@ -2,8 +2,11 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items: 3,
         loop: true,
-<<<<<<< HEAD
+
         autoplay: false,
+
+        autoplay: true,
+
         autoplayTimeout: 1400,
         responsive : {
             320: {
@@ -18,13 +21,13 @@ $(document).ready(function(){
             992 : {
 
             }
-        }
-=======
+        },
+
 
         autoplay: true,
 
         autoplayTimeout: 800,
->>>>>>> 5e16c24ab60bb3b33cc79d1b070603796ac6440d
+
     });
 });
 var map;
