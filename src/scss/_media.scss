@@ -10,13 +10,16 @@
 }
 @media (max-width: 768px){
   .container {
-    width: 100%;
+    max-width: 100%;
   }
   .video__title {
     font-size: 65px;
   }
   .welcome__container {
     display: block;
+  }
+  .element.style {
+    display: none;
   }
   .welcome__content {
     width: unset;
@@ -43,7 +46,7 @@
   }
 
   .grid__col-3{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 120px;
   }
   .catalog__item {
@@ -80,11 +83,55 @@
     display: flex;
     flex-direction: column;
   }
+  .navbar-btn{
+    display: flex;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+
+  }
+
+  .navbar__link:after{
+    display: none;
+  }
+  .navbar-btn.active span:before{
+    transform:rotate(45deg);
+    top: 0;
+  }
+  .navbar-btn.active span:after{
+    transform:rotate(-45deg);
+    top: 0;
+  }
+  .navbar-btn.active span{
+    background-color: transparent;
+  }
+  .navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: rgba(55, 5, 5, 0.9);
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.6s;
+    .navbar__link{
+      margin: 10px 0;
+    }
+  }
+  .navbar.active{
+    right: 0;
+  }
 }
 
 
 
 @media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
   .video__title {
     font-size: 45px;
   }
@@ -136,49 +183,10 @@
  margin: 0 90px;
   border-radius: 10px;
 }
-}
-
-@media(max-width: 768px){
-  .navbar-btn{
-    display: flex;
-    position: fixed;
-    right: 30px;
-    top: 30px;
-
-  }
-
-  .navbar__link:after{
-    display: none;
-  }
-  .navbar-btn.active span:before{
-    transform:rotate(45deg);
-    top: 0;
-  }
-  .navbar-btn.active span:after{
-    transform:rotate(-45deg);
-    top: 0;
-  }
-  .navbar-btn.active span{
-    background-color: transparent;
-  }
-  .navbar{
-    display: flex;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    background: rgba(55, 5, 5, 0.9);
-    width: 50%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.6s;
-    .navbar__link{
-      margin: 10px 0;
-    }
-  }
-  .navbar.active{
-    right: 0;
+  .grid__col-3{
+    grid-template-columns: 1fr;
+    grid-column-gap: 120px;
   }
 }
+
 
