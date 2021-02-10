@@ -89,7 +89,7 @@
     font-size: 45px;
   }
 .hero{
-  background: url("../images/Welcome.png") no-repeat center/cover;
+  background: url("../images/Welcome.png") no-repeat center/contain;
 }
 
   .welcome {
@@ -117,6 +117,9 @@
   }
   .shop__items-title {
     font-size: 20px;
+  }
+  .coaches{
+    background: url("../images/shopfon.jpg") no-repeat center/contain;
   }
   .coaches__title {
     font-size: 30px;
